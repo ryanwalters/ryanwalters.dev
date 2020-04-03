@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.module.scss';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
+      <div className={styles.App}>
+        <header className={styles.header}>
           <div style={{ textAlign: 'left' }}>
             <h1 style={{ marginBottom: 0 }}>Ryan Walters</h1>
             <div>Principal Engineer @ Encyclopedia Britannica</div>
-            {/*<small>
+            <div className={styles.content}>
               <a href="https://github.com/ryanwalters">Github</a>
-            </small>*/}
+              <a href="https://covid.ryanwalters.dev">COVID-19 Data Visualizations</a>
+            </div>
           </div>
         </header>
       </div>
